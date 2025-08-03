@@ -1,1 +1,5 @@
-export { SignIn } from '@clerk/nextjs';
+import { SignIn } from '@/components/auth/SignIn';
+
+export default function SignInPage() {
+  return <SignIn />;
+}
