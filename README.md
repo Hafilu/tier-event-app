@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎟️ Tier-Based Event Showcase App
 
-## Getting Started
+A full-stack web app built with **Next.js (App Router)**, **Clerk.dev** for authentication and user metadata, **Supabase** for database, and **Tailwind CSS** for UI.
 
-First, run the development server:
+Users can sign in and upgrade their tier (Free → Silver → Gold → Platinum), unlocking different levels of events based on their tier.
+
+---
+
+## 🔗 Live Demo
+
+👉[(https://your-vercel-app-url.vercel.app)](https://tier-event-loavw4wyf-hafilues-projects.vercel.app/)
+
+---
+
+## 🧪 Demo Users
+
+You can use any of these users to test tier-based access:
+
+| Tier     | Email                 | Password     |
+|----------|-----------------------|--------------|
+| Silver   | silver1@gmail.com   | Silver1@123  |
+| Silver   | silver2@gmail.com   | Silver2@123  |
+| Gold     | gold1@gmail.com     | Gold1@123    |
+| Gold     | gold2@gmail.com     | Gold2@123    |
+| Platinum | platinum1@gmail.com  | platinum1@123  |
+
+Or register a new user from the app.
+
+---
+
+## ⚙️ Features
+
+- 🔐 Clerk authentication with `publicMetadata` tier tracking
+- 🎯 Tier upgrade simulation (Free → Silver → Gold → Platinum)
+- 📦 Supabase backend to store and filter events
+- 🌐 Public/Private API routes using App Router
+- 💅 Fully responsive with Tailwind CSS
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js (App Router)
+- Clerk.dev for auth & metadata
+- Supabase for database
+- Tailwind CSS
+- TypeScript
+
+---
+
+## 🧰 Local Development
+
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/Hafilu/tier-event-app.git
+cd tier-event-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+.env
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= 
+CLERK_SECRET_KEY= 
+CLERK_JWKS_URL= 
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
