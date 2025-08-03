@@ -8,7 +8,7 @@ Users can sign in and upgrade their tier (Free → Silver → Gold → Platinum)
 
 ## 🔗 Live Demo
 
-👉[(https://your-vercel-app-url.vercel.app)](https://tier-event-loavw4wyf-hafilues-projects.vercel.app/)
+👉[(live)](https://tier-event-loavw4wyf-hafilues-projects.vercel.app/)
 
 ---
 
